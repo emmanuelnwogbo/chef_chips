@@ -1,0 +1,337 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 4rem;
+  overflow-x: hidden; }
+
+@font-face {
+  font-family: Helvetica Bold;
+  src: url("../../fonts/helvetica_bold.ttf") format("opentype"); }
+
+.header {
+  height: 7.5rem;
+  display: flex;
+  background: #fee600;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem; }
+  .header__logo {
+    height: 15rem;
+    width: 15rem; }
+    .header__logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      height: 14rem;
+      width: 14rem;
+      transform: translateX(-3.5rem) translateY(0.5rem); }
+  .header__menu {
+    display: flex; }
+  .header__items {
+    display: flex;
+    color: #000000;
+    font-size: 1.9rem;
+    font-family: Helvetica Bold; }
+    .header__items--item {
+      padding: 0.5rem 3rem;
+      position: relative;
+      cursor: pointer; }
+      .header__items--item:not(:nth-child(1))::before {
+        content: "";
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 0.2rem;
+        background: #000000; }
+    .header__items--svg {
+      height: 2.5rem;
+      width: 2.5rem;
+      fill: #fff;
+      display: inline-block;
+      transform: rotate(-100deg) translateX(-0.5rem);
+      cursor: pointer; }
+
+@font-face {
+  font-family: Lunchbox Regular;
+  src: url("../../fonts/lunchbox.otf") format("opentype"); }
+
+.slider {
+  height: 60rem;
+  margin-top: 4rem;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  line-height: 8rem;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  transition: all 3s ease; }
+  .slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(30, 39, 46, 0.2);
+    transition: all 3s ease;
+    z-index: 1; }
+  .slider__header {
+    position: relative;
+    z-index: 2; }
+    .slider__header h2 {
+      font-size: 11rem;
+      font-family: Lunchbox Regular;
+      color: #fff; }
+      .slider__header h2 span {
+        display: block; }
+  .slider__slide-1 {
+    background-image: url("../../imgs/slider-1.jpg"); }
+    .slider__slide-1::after {
+      opacity: 0;
+      transition: all 3s ease; }
+  .slider__slide-2 {
+    background-image: url("../../imgs/slider-2.jpg"); }
+    .slider__slide-2::after {
+      opacity: 0;
+      transition: all 3s ease; }
+  .slider__slide-3 {
+    background-image: url("../../imgs/slider-3.jpg"); }
+  .slider--btn {
+    font-size: 1.7rem;
+    color: #fff;
+    background: red;
+    border-radius: 3rem;
+    padding: 1.5rem 4rem;
+    font-weight: 600;
+    cursor: pointer; }
+
+.products {
+  position: relative;
+  height: 76rem;
+  margin-top: 4rem;
+  background-image: url(../../imgs/product-hanger.jpg);
+  padding: 5rem 7rem;
+  overflow: hidden; }
+  .products::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+  .products__slide {
+    display: flex;
+    flex-shrink: 0;
+    transition: all 0.5s ease; }
+    .products__slide-checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0; }
+      .products__slide-checkbox:checked ~ .products__variants:nth-child(2) {
+        opacity: 0; }
+      .products__slide-checkbox:checked ~ .products__variants:nth-child(3) {
+        opacity: 1; }
+    .products__slide-moved1 {
+      transform: translateX(-95%); }
+    .products__slide-nav {
+      position: absolute;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 6rem;
+      top: 0;
+      cursor: pointer;
+      justify-content: center;
+      z-index: 2; }
+      .products__slide-nav svg {
+        height: 7rem;
+        width: 7rem;
+        fill: #000000; }
+    .products__slide-navleft {
+      left: 0; }
+    .products__slide-navright {
+      right: 0; }
+  .products h2 {
+    position: relative;
+    font-size: 9rem;
+    color: rgba(30, 39, 46, 0.6);
+    z-index: 2; }
+  .products__variants {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    z-index: 2;
+    margin-bottom: 1rem;
+    transition: all 0.1s ease; }
+    .products__variants--variant {
+      height: 49rem;
+      width: 32rem;
+      background: #ffd26c; }
+      .products__variants--variant figure {
+        background: url(../../imgs/variant-placeholder.jpg);
+        height: 70%; }
+      .products__variants--variant-name {
+        padding: 2rem;
+        color: #fff;
+        font-weight: 600; }
+        .products__variants--variant-name p {
+          font-size: 3.5rem; }
+      .products__variants--variant-btn {
+        border-radius: 3rem;
+        padding: 1rem 3rem;
+        background: red;
+        color: #fff;
+        margin-top: 1.5rem;
+        display: inline-block;
+        font-size: 1.5rem;
+        cursor: pointer; }
+      .products__variants--variant:nth-child(1) {
+        background: #ffd26c; }
+      .products__variants--variant:nth-child(2) {
+        margin: 0 0.5rem; }
+    .products__variants:nth-child(2) {
+      transform: translateX(2rem);
+      z-index: 2; }
+    .products__variants:nth-child(3) {
+      opacity: 0;
+      z-index: 1; }
+    .products__variants--cassava figure {
+      background: url(../../imgs/variant-1.jpg);
+      height: 70%; }
+  .products--nav {
+    display: flex;
+    justify-content: center; }
+    .products--nav span {
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100%;
+      margin: 0.5rem;
+      background: #fff;
+      cursor: pointer;
+      transition: al 0.5s ease; }
+
+.social {
+  position: relative;
+  height: 55rem;
+  margin-top: 4rem;
+  background: url(../../imgs/social-media-box.jpg);
+  padding: 3rem 7rem; }
+  .social h2 {
+    position: relative;
+    font-size: 9rem;
+    color: rgba(30, 39, 46, 0.6);
+    z-index: 2;
+    padding: 0 4rem; }
+  .social__socials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem; }
+    .social__socials--card {
+      position: relative;
+      width: 40rem;
+      height: 36rem;
+      margin: 0 1rem; }
+      .social__socials--card-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(30, 39, 46, 0.9);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .social__socials--card-svg svg {
+          fill: #fff;
+          height: 10rem;
+          width: 10rem;
+          opacity: 0.3; }
+    .social__socials--embed {
+      position: relative;
+      width: 40rem;
+      height: 36rem; }
+
+.findus {
+  margin-top: 4rem;
+  height: 56rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../../imgs/green-bg.jpg); }
+  .findus h2 {
+    position: relative;
+    font-size: 9rem;
+    color: rgba(30, 39, 46, 0.6);
+    z-index: 2;
+    width: 100%;
+    padding: 0 9rem; }
+  .findus__map {
+    margin-top: 1rem;
+    width: 62vw;
+    height: 39rem; }
+
+.footer {
+  height: 16rem;
+  background: #fee600;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff; }
+  .footer h2 {
+    font-size: 3rem; }
+  .footer span {
+    cursor: pointer;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100%;
+    background: rgba(47, 54, 64, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer span svg {
+      height: 7rem;
+      width: 7rem;
+      fill: #fff; }
+
+body {
+  background: #ffcf3b;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.container {
+  margin: 0 auto;
+  width: 75vw; }
+
+/*@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+
+@import "layout/footer";
+@import "layout/header";
+
+@import "pages/home";*/
