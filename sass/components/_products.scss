@@ -2,7 +2,7 @@
   position: relative;
   height: 76rem;
   margin-top: 4rem;
-  background-image: url(../../imgs/product-hanger.jpg);
+  background-image: url("/../../imgs/product-hanger.jpg");
   //background-size: cover;
   //background-position: top;
   padding: 5rem 7rem;
@@ -93,7 +93,7 @@
       background: #ffd26c;
 
       & figure {
-        background: url(../../imgs/variant-placeholder.jpg);
+        background: url("/../../imgs/variant-placeholder.jpg");
         height: 70%;
       }
 
@@ -139,7 +139,7 @@
 
     &--cassava {
       & figure {
-        background: url(../../imgs/variant-1.jpg);
+        background: url("/../../imgs/variant-1.jpg");
         height: 70%;
       }
     }
