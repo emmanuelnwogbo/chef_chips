@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/helvetica.ttf" />
+    <link rel="stylesheet" href="fonts/helvetica_bold.ttf" />
+    <link rel="stylesheet" href="fonts/lunchbox.otf" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>chef chips</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <figure class="header__logo">
+          <img src="imgs/chef-logo.png" />
+        </figure>
+        <div class="header__menu">
+          <div class="header__items">
+            <div class="header__items--item">About Us</div>
+            <div class="header__items--item">Contact</div>
+            <div class="header__items--item">Product</div>
+          </div>
+          <div>
+            <svg class="header__items--svg">
+              <use xlink:href="imgs/sprite.svg#icon-magnifying-glass1"></use>
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <div class="slider slider__slide-1" id="slider">
+        <div class="slider__header">
+          <h2><span>The chief</span><span>is here...</span></h2>
+          <span class="slider--btn">FIND YOUR FLAVOUR</span>
+        </div>
+      </div>
+
+      <div class="products">
+        <h2>Variants</h2>
+
+        <div
+          class="products__slide-navleft products__slide-nav"
+          id="product-navleft"
+        >
+          <div class="products__slide-nav-svg">
+            <svg>
+              <use xlink:href="imgs/sprite.svg#icon-navigate_before"></use>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="products__slide-navright products__slide-nav"
+          id="product-navright"
+        >
+          <div class="products__slide-nav-svg">
+            <svg>
+              <use xlink:href="imgs/sprite.svg#icon-navigate_next"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="products__slide" id="slider-2">
+          <input
+            class="products__slide-checkbox"
+            type="checkbox"
+            id="slider-2-check"
+          />
+          <div class="products__variants">
+            <div
+              class="products__variants--variant products__variants--cassava"
+            >
+              <figure></figure>
+              <div class="products__variants--variant-name">
+                <p>Cassava chips</p>
+                <span class="products__variants--variant-btn">See more</span>
+              </div>
+            </div>
+            <div class="products__variants--variant">
+              <figure></figure>
+              <div class="products__variants--variant-name">
+                <p>Coming soon</p>
+              </div>
+            </div>
+            <div class="products__variants--variant">
+              <figure></figure>
+              <div class="products__variants--variant-name">
+                <p>Coming soon</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__variants">
+            <div class="products__variants--variant">
+              <figure></figure>
+              <div class="products__variants--variant-name">
+                <p>Coming soon</p>
+              </div>
+            </div>
+            <div class="products__variants--variant">
+              <figure></figure>
+              <div class="products__variants--variant-name">
+                <p>Coming soon</p>
+              </div>
+            </div>
+            <div class="products__variants--variant">
+              <figure></figure>
+              <div class="products__variants--variant-name">
+                <p>Coming soon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products--nav">
+          <span class="products--nav-span"></span>
+          <span class="products--nav-span"></span>
+        </div>
+      </div>
+
+      <div class="social">
+        <h2>Social feed</h2>
+
+        <div class="social__socials">
+          <div class="social__socials--card">
+            <div class="social__socials--card-svg">
+              <svg>
+                <use xlink:href="imgs/sprite.svg#icon-instagram"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="social__socials--card">
+            <div class="social__socials--card-svg">
+              <svg>
+                <use xlink:href="imgs/sprite.svg#icon-twitter"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="findus">
+        <h2>Find Us</h2>
+        <div class="findus__map" id="map"></div>
+      </div>
+
+      <footer class="footer">
+        <h2>FOLLOW US</h2>
+        <span>
+          <svg>
+            <use xlink:href="imgs/sprite.svg#icon-facebook"></use>
+          </svg>
+        </span>
+        <span>
+          <svg>
+            <use xlink:href="imgs/sprite.svg#icon-instagram"></use>
+          </svg>
+        </span>
+        <span>
+          <svg>
+            <use xlink:href="imgs/sprite.svg#icon-twitter"></use>
+          </svg>
+        </span>
+      </footer>
+    </div>
+  </body>
+
+  <script src="js/index.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFdPqz2fYoM39ld7gTxES1zvTuJYyc9S4&callback=initMap"
+  ></script>
+</html>

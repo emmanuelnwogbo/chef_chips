@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Helvetica Bold;
+    src: url("../../fonts/helvetica_bold.ttf") format("opentype");
+  }
+  
+  .header {
+  height: 7.5rem;
+  display: flex;
+  background: #fee600;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  &__logo {
+    height: 15rem;
+    width: 15rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      height: 14rem;
+      width: 14rem;
+      transform: translateX(-3.5rem) translateY(0.5rem);
+    }
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__items {
+    display: flex;
+    color: #000000;
+    font-size: 1.9rem;
+    font-family: Helvetica Bold;
+
+    &--item {
+      padding: 0.5rem 3rem;
+      position: relative;
+      cursor: pointer;
+
+      &:not(:nth-child(1)) {
+        &::before {
+          content: "";
+          top: 0;
+          left: 0;
+          position: absolute;
+          height: 100%;
+          width: 0.2rem;
+          background: #000000;
+        }
+      }
+    }
+
+    &--svg {
+      height: 2.5rem;
+      width: 2.5rem;
+      fill: #fff;
+      display: inline-block;
+      transform: rotate(-100deg) translateX(-0.5rem);
+      cursor: pointer;
+    }
+  }
+}

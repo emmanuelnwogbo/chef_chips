@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Lunchbox Regular;
+  src: url("../../fonts/lunchbox.otf") format("opentype");
+}
+
+.slider {
+  height: 60rem;
+  margin-top: 4rem;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  line-height: 8rem;
+
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  transition: all 3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(30, 39, 46, 0.2);
+    transition: all 3s ease;
+    z-index: 1;
+  }
+
+  &__header {
+    position: relative;
+    z-index: 2;
+    & h2 {
+      font-size: 11rem;
+      font-family: Lunchbox Regular;
+      color: #fff;
+
+      & span {
+        display: block;
+      }
+    }
+  }
+
+  &__slide-1 {
+    background-image: url("../../imgs/slider-1.jpg");
+
+    &::after {
+      opacity: 0;
+      transition: all 3s ease;
+    }
+  }
+
+  &__slide-2 {
+    background-image: url("../../imgs/slider-2.jpg");
+
+    &::after {
+      opacity: 0;
+      transition: all 3s ease;
+    }
+  }
+
+  &__slide-3 {
+    background-image: url("../../imgs/slider-3.jpg");
+  }
+
+  &--btn {
+    font-size: 1.7rem;
+    color: #fff;
+    background: red;
+    border-radius: 3rem;
+    padding: 1.5rem 4rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

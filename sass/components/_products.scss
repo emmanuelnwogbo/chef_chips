@@ -1,0 +1,163 @@
+.products {
+  position: relative;
+  height: 76rem;
+  margin-top: 4rem;
+  background-image: url(../../imgs/product-hanger.jpg);
+  //background-size: cover;
+  //background-position: top;
+  padding: 5rem 7rem;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    //background: rgba(30, 39, 46, 0.2);
+    z-index: 1;
+  }
+
+  &__slide {
+    display: flex;
+    flex-shrink: 0;
+    transition: all 0.5s ease;
+
+    &-checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+
+      &:checked ~ .products__variants:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:checked ~ .products__variants:nth-child(3) {
+        opacity: 1;
+      }
+    }
+
+    &-moved1 {
+      transform: translateX(-95%);
+    }
+
+    &-nav {
+      position: absolute;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 6rem;
+      top: 0;
+      cursor: pointer;
+      justify-content: center;
+      z-index: 2;
+
+      & svg {
+        height: 7rem;
+        width: 7rem;
+        fill: #000000;
+      }
+    }
+
+    &-navleft {
+      left: 0;
+    }
+
+    &-navright {
+      right: 0;
+    }
+  }
+
+  & h2 {
+    position: relative;
+    font-size: 9rem;
+    color: rgba(30, 39, 46, 0.6);
+    z-index: 2;
+  }
+
+  &__variants {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    z-index: 2;
+    margin-bottom: 1rem;
+    transition: all 0.1s ease;
+
+    &--variant {
+      height: 49rem;
+      width: 32rem;
+      background: #ffd26c;
+
+      & figure {
+        background: url(../../imgs/variant-placeholder.jpg);
+        height: 70%;
+      }
+
+      &-name {
+        padding: 2rem;
+        color: #fff;
+        font-weight: 600;
+
+        & p {
+          font-size: 3.5rem;
+        }
+      }
+
+      &-btn {
+        border-radius: 3rem;
+        padding: 1rem 3rem;
+        background: red;
+        color: #fff;
+        margin-top: 1.5rem;
+        display: inline-block;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      &:nth-child(1) {
+        background: #ffd26c;
+      }
+
+      &:nth-child(2) {
+        margin: 0 0.5rem;
+      }
+    }
+
+    &:nth-child(2) {
+      transform: translateX(2rem);
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      opacity: 0;
+      z-index: 1;
+    }
+
+    &--cassava {
+      & figure {
+        background: url(../../imgs/variant-1.jpg);
+        height: 70%;
+      }
+    }
+  }
+
+  &--nav {
+    display: flex;
+    justify-content: center;
+
+    & span {
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100%;
+      margin: 0.5rem;
+      background: #fff;
+      cursor: pointer;
+      transition: al 0.5s ease;
+    }
+  }
+}
