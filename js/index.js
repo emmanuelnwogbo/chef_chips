@@ -9,6 +9,8 @@ const dropdown = document.getElementById("dropdown");
 const dropdownCheck = document.getElementById("dropdown-check");
 const dropdownItems = document.querySelectorAll(".dropdown__item");
 
+const sliderSlides = document.querySelectorAll(".slider__slide");
+
 slider2nav[0].style.background = `#ffcf3b`;
 
 let tracker = 1;
@@ -16,16 +18,18 @@ let tracker = 1;
 setInterval(function () {
   if (tracker < 3) {
     tracker += 1;
-    slider.classList.replace(
-      `slider__slide-${tracker - 1}`,
-      `slider__slide-${tracker}`
-    );
+    Array.from(sliderSlides).forEach((item) => {
+      item.classList.contains(`slider__slide-${tracker}`)
+        ? item.classList.add("visible-slide")
+        : item.classList.remove("visible-slide");
+    });
   } else {
     tracker = 1;
-    slider.classList.replace(
-      `slider__slide-${tracker + 2}`,
-      `slider__slide-${tracker}`
-    );
+    Array.from(sliderSlides).forEach((item) => {
+      item.classList.contains(`slider__slide-${tracker}`)
+        ? item.classList.add("visible-slide")
+        : item.classList.remove("visible-slide");
+    });
   }
 }, 5000);
 

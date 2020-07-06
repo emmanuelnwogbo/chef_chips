@@ -199,6 +199,14 @@ body {
       color: #fff; }
       .slider__header h2 span {
         display: block; }
+  .slider__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 3s ease;
+    opacity: 0; }
   .slider__slide-1 {
     background-image: url(../imgs/slider-1.jpg); }
     .slider__slide-1::after {
@@ -219,6 +227,9 @@ body {
     padding: 1.5rem 4rem;
     font-weight: 600;
     cursor: pointer; }
+
+.visible-slide {
+  opacity: 1; }
 
 .products {
   position: relative;
