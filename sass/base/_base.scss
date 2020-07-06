@@ -9,12 +9,28 @@
 html {
   // This defines what 1rem is
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 25%;
+  }
 }
 
 body {
   box-sizing: border-box;
   padding: 4rem;
   overflow-x: hidden;
+
+  @include respond(tab-land) {
+    padding: 4rem 0 0 0 ;
+  }
 }
 
 ::selection {

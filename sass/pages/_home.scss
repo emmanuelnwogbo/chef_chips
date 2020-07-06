@@ -6,4 +6,8 @@ body {
 .container {
   margin: 0 auto;
   width: 75vw;
+
+  @include respond(tab-land) {
+    width: 100vw;
+  }
 }

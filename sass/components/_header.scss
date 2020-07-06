@@ -1,33 +1,74 @@
 @font-face {
-    font-family: Helvetica Bold;
-    src: url("./fonts/helvetica_bold.ttf") format("opentype");
-  }
-  
-  .header {
+  font-family: Helvetica Bold;
+  src: url("../../fonts/helvetica_bold.ttf") format("opentype");
+}
+
+.header {
   height: 7.5rem;
   display: flex;
   background: #fee600;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  position: relative;
+
+  z-index: 5;
+  @include respond(tab-land) {
+    height: 10.5rem
+  }
 
   &__logo {
     height: 15rem;
     width: 15rem;
 
     & img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
       display: block;
       height: 14rem;
       width: 14rem;
       transform: translateX(-3.5rem) translateY(0.5rem);
+
+      @include respond(tab-land) {
+        height: 21rem;
+        width: 21rem;
+      }
+    }
+
+    @include respond(tab-land) {
+      height: 21rem;
+      width: 21rem;
     }
   }
 
   &__menu {
     display: flex;
+  }
+
+  &__items--mobile {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+      display: inline-block;
+      background: #fff;
+      height: 0.7rem;
+      width: 5.5rem;
+      margin: 0.3rem 0;
+      border-radius: 3rem;
+      transition: all 0.2s ease;
+    }
+    @include respond(tab-land) {
+      display: flex;
+    }
+  }
+
+  &__search {
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 
   &__items {
@@ -40,6 +81,10 @@
       padding: 0.5rem 3rem;
       position: relative;
       cursor: pointer;
+
+      @include respond(tab-land) {
+        display: none;
+      }
 
       &:not(:nth-child(1)) {
         &::before {

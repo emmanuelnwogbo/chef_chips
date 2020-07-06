@@ -1,6 +1,6 @@
 @font-face {
   font-family: Lunchbox Regular;
-  src: url("./fonts/lunchbox.otf") format("opentype");
+  src: url("../../fonts/lunchbox.otf") format("opentype");
 }
 
 .slider {
@@ -43,7 +43,7 @@
   }
 
   &__slide-1 {
-    background-image: url("./imgs/slider-1.jpg");
+    background-image: url(../imgs/slider-1.jpg);
 
     &::after {
       opacity: 0;
@@ -52,7 +52,7 @@
   }
 
   &__slide-2 {
-    background-image: url("./imgs/slider-2.jpg");
+    background-image: url(../imgs/slider-2.jpg);
 
     &::after {
       opacity: 0;
@@ -61,7 +61,7 @@
   }
 
   &__slide-3 {
-    background-image: url("./imgs/slider-3.jpg");
+    background-image: url(../imgs/slider-3.jpg);
   }
 
   &--btn {

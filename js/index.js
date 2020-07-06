@@ -4,6 +4,10 @@ const slider2check = document.getElementById("slider-2-check");
 const slider2nav = document.querySelectorAll(".products--nav-span");
 const productsnavLeft = document.getElementById("product-navleft");
 const productsnavRight = document.getElementById("product-navright");
+const burger = document.getElementById("burger");
+const dropdown = document.getElementById("dropdown");
+const dropdownCheck = document.getElementById("dropdown-check");
+const dropdownItems = document.querySelectorAll(".dropdown__item");
 
 slider2nav[0].style.background = `#ffcf3b`;
 
@@ -29,7 +33,6 @@ productsnavRight.addEventListener("click", function (e) {
   slider2check.checked = true;
   slider2nav[0].style.background = `#fff`;
   slider2nav[1].style.background = `#ffcf3b`;
-  console.log(slider2nav);
   if (!slider2.classList.contains("products__slide-moved1")) {
     slider2.classList.add("products__slide-moved1");
   }
@@ -52,3 +55,17 @@ function initMap() {
   });
   var marker = new google.maps.Marker({ position: addre, map: map });
 }
+
+burger.addEventListener("click", function (event) {
+  dropdownCheck.checked
+    ? (dropdownCheck.checked = false)
+    : (dropdownCheck.checked = true);
+});
+
+Array.from(dropdownItems).forEach((item) => {
+  item.addEventListener("click", function () {
+    dropdownCheck.checked
+      ? (dropdownCheck.checked = false)
+      : (dropdownCheck.checked = true);
+  });
+});

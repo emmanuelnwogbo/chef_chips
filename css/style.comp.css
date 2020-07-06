@@ -15,7 +15,7 @@ body {
 
 @font-face {
   font-family: Helvetica Bold;
-  src: url("/../../fonts/helvetica_bold.ttf") format("opentype"); }
+  src: url("../../fonts/helvetica_bold.ttf") format("opentype"); }
 
 .header {
   height: 7.5rem;
@@ -64,7 +64,7 @@ body {
 
 @font-face {
   font-family: Lunchbox Regular;
-  src: url("/../../fonts/lunchbox.otf") format("opentype"); }
+  src: url("../../fonts/lunchbox.otf") format("opentype"); }
 
 .slider {
   height: 60rem;
@@ -97,17 +97,17 @@ body {
       .slider__header h2 span {
         display: block; }
   .slider__slide-1 {
-    background-image: url("/../../imgs/slider-1.jpg"); }
+    background-image: url("../../imgs/slider-1.jpg"); }
     .slider__slide-1::after {
       opacity: 0;
       transition: all 3s ease; }
   .slider__slide-2 {
-    background-image: url("/../../imgs/slider-2.jpg"); }
+    background-image: url("../../imgs/slider-2.jpg"); }
     .slider__slide-2::after {
       opacity: 0;
       transition: all 3s ease; }
   .slider__slide-3 {
-    background-image: url("/../../imgs/slider-3.jpg"); }
+    background-image: url("../../imgs/slider-3.jpg"); }
   .slider--btn {
     font-size: 1.7rem;
     color: #fff;
@@ -121,7 +121,7 @@ body {
   position: relative;
   height: 76rem;
   margin-top: 4rem;
-  background-image: url("/../../imgs/product-hanger.jpg");
+  background-image: url("../../imgs/product-hanger.jpg");
   padding: 5rem 7rem;
   overflow: hidden; }
   .products::after {
@@ -184,7 +184,7 @@ body {
       width: 32rem;
       background: #ffd26c; }
       .products__variants--variant figure {
-        background: url("/../../imgs/variant-placeholder.jpg");
+        background: url("../../imgs/variant-placeholder.jpg");
         height: 70%; }
       .products__variants--variant-name {
         padding: 2rem;
@@ -212,7 +212,7 @@ body {
       opacity: 0;
       z-index: 1; }
     .products__variants--cassava figure {
-      background: url("/../../imgs/variant-1.jpg");
+      background: url("../../imgs/variant-1.jpg");
       height: 70%; }
   .products--nav {
     display: flex;
@@ -231,7 +231,7 @@ body {
   position: relative;
   height: 55rem;
   margin-top: 4rem;
-  background: url("/../../imgs/social-media-box.jpg");
+  background: url("../../imgs/social-media-box.jpg");
   padding: 3rem 7rem; }
   .social h2 {
     position: relative;
@@ -275,7 +275,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/../../imgs/green-bg.jpg"); }
+  background: url("../../imgs/green-bg.jpg"); }
   .findus h2 {
     position: relative;
     font-size: 9rem;

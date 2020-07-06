@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("./imgs/green-bg.jpg");
+  background: url(../imgs/green-bg.jpg);
 
   & h2 {
     position: relative;
@@ -20,5 +20,13 @@
     margin-top: 1rem;
     width: 62vw;
     height: 39rem;
+
+    @include respond(tab-land) {
+      width: 82vw;
+    }
+
+    @include respond(phone) {
+      width: 76vw;
+    }
   }
 }
