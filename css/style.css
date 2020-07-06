@@ -68,7 +68,7 @@ body {
     align-items: center; }
     .header__items--mobile span {
       display: inline-block;
-      background: #fff;
+      background: #000000;
       height: 0.7rem;
       width: 6.5rem;
       margin: 0.5rem 0;
@@ -139,7 +139,7 @@ body {
       display: flex;
       z-index: 3; }
     .dropdown-check:checked ~ .header > .header__menu > .header__items > .header__items--mobile span:nth-child(1) {
-      transform: rotate(48deg) translate(0.9rem, 1rem); }
+      transform: rotate(51deg) translate(1.5rem, 1.2rem); }
     .dropdown-check:checked ~ .header > .header__menu > .header__items > .header__items--mobile span:nth-child(2) {
       opacity: 0; }
     .dropdown-check:checked ~ .header > .header__menu > .header__items > .header__items--mobile span:nth-child(3) {
