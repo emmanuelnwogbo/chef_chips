@@ -507,6 +507,9 @@ body {
   @media only screen and (max-width: 75em) {
     .container {
       width: 100vw; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      padding: 0 3rem 3rem 3rem; } }
 
 /*@import "abstracts/functions";
 @import "abstracts/mixins";
