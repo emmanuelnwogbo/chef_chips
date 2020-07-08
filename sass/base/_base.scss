@@ -7,20 +7,20 @@
 }
 
 @viewport {
-  zoom: 1.0;
+  zoom: 1;
   width: device-width;
 }
 
-@-ms-viewport{
-  zoom: 1.0;
+@-ms-viewport {
+  zoom: 1;
   width: device-width;
 }
 
 html {
   // This defines what 1rem is
   font-size: 62.5%;
-  
-  @include respond(tab-land) {
+
+  /*@include respond(tab-land) {
     // width < 1200?
     font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
   }
@@ -36,6 +36,24 @@ html {
 
   @include respond(big-desktop) {
     font-size: 75%; //1rem = 12, 12/16
+  }*/
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 47%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    font-size: 25%;
+  }
+
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: 28%;
   }
 }
 

@@ -6,27 +6,44 @@
   box-sizing: inherit; }
 
 @viewport {
-  zoom: 1.0;
+  zoom: 1;
   width: device-width; }
 
 @-ms-viewport {
-  zoom: 1.0;
+  zoom: 1;
   width: device-width; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  /*@include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(phone) {
+    font-size: 29%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }*/ }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 37.5em) {
+      font-size: 47%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     html {
-      font-size: 29%; } }
-  @media only screen and (min-width: 112.5em) {
+      font-size: 25%; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     html {
-      font-size: 75%; } }
+      font-size: 28%; } }
 
 body {
   box-sizing: border-box;
