@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="fonts/helvetica_bold.ttf" />
     <link rel="stylesheet" href="fonts/lunchbox.otf" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/jpg" href="/imgs/chef-logo.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="/imgs/chef-logo.png" />
     <!--<link rel="stylesheet" href="css/style.comp.css" />-->
     <title>chef chips</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <input
         type="checkbox"
         name=""
@@ -61,7 +61,7 @@
         <div class="slider__slide slider__slide-3"></div>
       </div>
 
-      <div class="products">
+      <div class="products" id="products">
         <h2>Variants</h2>
 
         <div
@@ -85,12 +85,19 @@
           </div>
         </div>
 
-        <div class="products__slide" id="slider-2">
-          <input
-            class="products__slide-checkbox"
-            type="checkbox"
-            id="slider-2-check"
-          />
+        <input
+          class="products__slide-checkbox"
+          type="checkbox"
+          id="slider-2-check"
+        />
+
+        <input
+          class="products__slide-checkbox2"
+          type="checkbox"
+          id="slider-2-check2"
+        />
+
+        <div class="products__slide">
           <div class="products__variants">
             <div
               class="products__variants--variant products__variants--cassava"
@@ -140,21 +147,22 @@
         <div class="products--nav">
           <span class="products--nav-span"></span>
           <span class="products--nav-span"></span>
+          <span class="products--nav-span"></span>
         </div>
       </div>
 
-      <div class="social">
+      <div class="social" id="social-feed">
         <h2>Social feed</h2>
 
         <div class="social__socials">
-          <div class="social__socials--card">
+          <div class="social__socials--card social__socials--instagram">
             <div class="social__socials--card-svg">
               <svg>
                 <use xlink:href="imgs/sprite.svg#icon-instagram"></use>
               </svg>
             </div>
           </div>
-          <div class="social__socials--card">
+          <div class="social__socials--card social__socials--twitter">
             <div class="social__socials--card-svg">
               <svg>
                 <use xlink:href="imgs/sprite.svg#icon-twitter"></use>
@@ -164,9 +172,9 @@
         </div>
       </div>
 
-      <div class="findus">
+      <div class="findus" id="findus">
         <h2>Find Us</h2>
-        <div class="findus__map" id="map"></div>
+        <!---<div class="findus__map" id="map"></div>--->
       </div>
 
       <footer class="footer">

@@ -3,27 +3,35 @@
   height: 55rem;
   margin-top: 4rem;
   background: url(../imgs/social-media-box.jpg);
-  //background-size: cover;
-  //background-position: top;
-  padding: 3rem 7rem;
+  padding: 5rem 7rem;
+
+  @include respond(tab-land) {
+    padding: 5rem 3.5rem;
+  }
+
+  @include respond(phone) {
+    height: 76rem;
+  }
+
+  @media only screen and (max-width: 375px) {
+    background-image: url(../imgs/mobile-socialfeed375.jpg);
+  }
 
   & h2 {
     position: relative;
     font-size: 9rem;
     color: rgba(30, 39, 46, 0.6);
     z-index: 2;
-
-    padding: 0 4rem;
   }
 
   &__socials {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 2rem;
 
     &--card {
       position: relative;
-      width: 40rem;
+      flex-basis: 44%;
       height: 36rem;
       margin: 0 1rem;
 

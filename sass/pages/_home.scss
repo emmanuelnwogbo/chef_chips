@@ -9,5 +9,6 @@ body {
 
   @include respond(tab-land) {
     width: 100vw;
+    //padding: 3rem 3.5rem;
   }
 }

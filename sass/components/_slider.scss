@@ -55,6 +55,14 @@
   &__slide-1 {
     background-image: url(../imgs/slider-1.jpg);
 
+    @include respond(phone) {
+      background-image: url(../imgs/slider-mobile-1.jpg);
+    }
+
+    @media only screen and (max-width: 375px) {
+      background-image: url(../imgs/mobile-slider-375-1.jpg);
+    }
+
     &::after {
       opacity: 0;
       transition: all 3s ease;
@@ -64,6 +72,14 @@
   &__slide-2 {
     background-image: url(../imgs/slider-2.jpg);
 
+    @include respond(phone) {
+      background-image: url(../imgs/slider-mobile-2.jpg);
+    }
+
+    @media only screen and (max-width: 375px) {
+      background-image: url(../imgs/mobile-slider-375-2.jpg);
+    }
+
     &::after {
       opacity: 0;
       transition: all 3s ease;
@@ -72,6 +88,14 @@
 
   &__slide-3 {
     background-image: url(../imgs/slider-3.jpg);
+
+    @include respond(phone) {
+      background-image: url(../imgs/slider-mobile-3.jpg);
+    }
+
+    @media only screen and (max-width: 375px) {
+      background-image: url(../imgs/mobile-slider-375-3.jpg);
+    }
   }
 
   &--btn {

@@ -1,19 +1,23 @@
 .findus {
-  margin-top: 4rem;
-  height: 56rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: url(../imgs/green-bg.jpg);
+  position: relative;
+  height: 55rem;
+  margin-top: 4rem;
+  padding: 5rem 7rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 3.5rem;
+  }
+
+  @media only screen and (max-width: 375px) {
+    background-image: url(../imgs/find-us-375.jpg);
+  }
 
   & h2 {
     position: relative;
     font-size: 9rem;
     color: rgba(30, 39, 46, 0.6);
     z-index: 2;
-    width: 100%;
-    padding: 0 9rem;
   }
 
   &__map {
