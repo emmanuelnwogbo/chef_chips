@@ -6,6 +6,16 @@
   box-sizing: inherit;
 }
 
+@viewport {
+  zoom: 1.0;
+  width: device-width;
+}
+
+@-ms-viewport{
+  zoom: 1.0;
+  width: device-width;
+}
+
 html {
   // This defines what 1rem is
   font-size: 62.5%;

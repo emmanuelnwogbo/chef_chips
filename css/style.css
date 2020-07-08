@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: inherit; }
 
+@viewport {
+  zoom: 1.0;
+  width: device-width; }
+
+@-ms-viewport {
+  zoom: 1.0;
+  width: device-width; }
+
 html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
