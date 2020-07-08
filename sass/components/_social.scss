@@ -35,6 +35,10 @@
       height: 36rem;
       margin: 0 1rem;
 
+      @include respond(phone) {
+        flex-basis: 47%;
+      }
+
       &-svg {
         position: absolute;
         top: 0;

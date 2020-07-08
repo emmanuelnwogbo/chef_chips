@@ -348,6 +348,8 @@ body {
       flex-basis: 34%;
       flex-shrink: 0;
       background: #ffd26c; }
+      .products__variants--variant:not(:last-child) {
+        margin-right: 1rem; }
       @media only screen and (max-width: 37.5em) {
         .products__variants--variant {
           flex-basis: 50%; } }
@@ -425,6 +427,9 @@ body {
       flex-basis: 44%;
       height: 36rem;
       margin: 0 1rem; }
+      @media only screen and (max-width: 37.5em) {
+        .social__socials--card {
+          flex-basis: 47%; } }
       .social__socials--card-svg {
         position: absolute;
         top: 0;
