@@ -40,10 +40,10 @@ html {
       font-size: 47%; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     html {
-      font-size: 25%; } }
+      font-size: 28%; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
     html {
-      font-size: 28%; } }
+      font-size: 30%; } }
 
 body {
   box-sizing: border-box;
