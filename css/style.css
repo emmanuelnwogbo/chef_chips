@@ -446,13 +446,20 @@ body {
   height: 55rem;
   margin-top: 4rem;
   background: url(../imgs/social-media-box.jpg);
-  padding: 5rem 7rem; }
-  @media only screen and (max-width: 75em) {
-    .social {
-      padding: 5rem 3.5rem; } }
-  @media only screen and (max-width: 37.5em) {
+  padding: 5rem 7rem;
+  /*@include respond(tab-land) {
+    padding: 5rem 3.5rem;
+  }
+
+  @include respond(phone) {
+    height: 76rem;
+  }*/ }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .social {
       height: 76rem; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .social {
+      padding: 5rem 3.5rem; } }
   @media only screen and (max-width: 375px) {
     .social {
       background-image: url(../imgs/mobile-socialfeed375.jpg); } }

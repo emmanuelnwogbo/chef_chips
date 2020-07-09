@@ -5,12 +5,20 @@
   background: url(../imgs/social-media-box.jpg);
   padding: 5rem 7rem;
 
-  @include respond(tab-land) {
+  /*@include respond(tab-land) {
     padding: 5rem 3.5rem;
   }
 
   @include respond(phone) {
     height: 76rem;
+  }*/
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    height: 76rem;
+  }
+
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    padding: 5rem 3.5rem;
   }
 
   @media only screen and (max-width: 375px) {
