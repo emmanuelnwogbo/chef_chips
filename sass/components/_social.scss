@@ -5,6 +5,10 @@
   background: url(../imgs/social-media-box.jpg);
   padding: 5rem 7rem;
 
+  @include respond(tab-land) {
+    padding: 5rem 2.6rem;
+  }
+
   /*@include respond(tab-land) {
     padding: 5rem 3.5rem;
   }
