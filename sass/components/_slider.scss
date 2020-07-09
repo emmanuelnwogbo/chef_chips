@@ -102,10 +102,15 @@
     font-size: 1.7rem;
     color: #fff;
     background: red;
-    border-radius: 3rem;
+    border-radius: 28rem;
     padding: 1.5rem 4rem;
     font-weight: 600;
     cursor: pointer;
+
+    @include respond(phone) {
+      padding: 2.5rem 4rem;
+      font-size: 1.9rem;
+    }
   }
 }
 
