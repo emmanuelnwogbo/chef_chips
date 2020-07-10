@@ -36,37 +36,15 @@ html {
     font-size: 75%; //1rem = 12, 12/16
   }*/
 
-  @include respond(tab-land) {
-    // width < 1200?
-    font-size: 56.25% !important; //1 rem = 9px, 9/16 = 50%
+  @media only screen and (max-width: 800px) {
+    font-size: 49% !important;
   }
 
-  @include respond(tab-port) {
-    // width < 900?
-    font-size: 47% !important; //1 rem = 8px, 8/16 = 50%
-  }
-
-  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    font-size: 47% !important;
-  }
-
-  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    font-size: 47% !important;
-  }
-
-  @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  @media only screen and (max-width: 414px) {
     font-size: 30% !important;
   }
 
-  @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    font-size: 30% !important;
-  }
-
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    font-size: 28% !important;
-  }
-
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  @media only screen and (max-width: 320px)  {
     font-size: 28% !important;
   }
 }

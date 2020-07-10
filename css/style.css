@@ -30,28 +30,13 @@ html {
   @include respond(big-desktop) {
     font-size: 75%; //1rem = 12, 12/16
   }*/ }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 800px) {
     html {
-      font-size: 56.25% !important; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 47% !important; } }
-  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    html {
-      font-size: 47% !important; } }
-  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    html {
-      font-size: 47% !important; } }
-  @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      font-size: 49% !important; } }
+  @media only screen and (max-width: 414px) {
     html {
       font-size: 30% !important; } }
-  @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    html {
-      font-size: 30% !important; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    html {
-      font-size: 28% !important; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  @media only screen and (max-width: 320px) {
     html {
       font-size: 28% !important; } }
 
