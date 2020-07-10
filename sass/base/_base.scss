@@ -16,7 +16,8 @@
 
 html {
   // This defines what 1rem is
-  font-size: 60.5%;
+  //font-size: 60.5%;
+  font-size: 30% !important;
 
   /*@include respond(tab-land) {
     // width < 1200?
