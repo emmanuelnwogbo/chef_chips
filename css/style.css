@@ -36,18 +36,24 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 47% !important; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     html {
-      font-size: 28% !important; } }
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      font-size: 47% !important; } }
+  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     html {
-      font-size: 28% !important; } }
+      font-size: 47% !important; } }
   @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     html {
       font-size: 30% !important; } }
   @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     html {
       font-size: 30% !important; } }
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    html {
+      font-size: 28% !important; } }
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    html {
+      font-size: 28% !important; } }
 
 body {
   box-sizing: border-box;

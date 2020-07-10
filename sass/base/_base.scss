@@ -10,7 +10,7 @@
   width: device-width;
 }
 
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
 
@@ -46,12 +46,12 @@ html {
     font-size: 47% !important; //1 rem = 8px, 8/16 = 50%
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-    font-size: 28% !important;
+  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    font-size: 47% !important;
   }
 
-  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    font-size: 28% !important;
+  @media (max-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    font-size: 47% !important;
   }
 
   @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -60,6 +60,14 @@ html {
 
   @media only screen and (min-width: 414px) and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     font-size: 30% !important;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    font-size: 28% !important;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    font-size: 28% !important;
   }
 }
 
@@ -71,9 +79,4 @@ body {
   @include respond(tab-land) {
     padding: 4rem 0 0 0;
   }
-}
-
-::selection {
-  //background-color: $color-primary;
-  //color: $color-white;
 }
